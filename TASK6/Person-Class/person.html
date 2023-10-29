@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class person {
+            constructor(firstName, lastName, age, qualification, department) {
+             this.firstName = firstName;
+             this.lastName = lastName;
+             this.age = age;
+             this.qualification = qualification;
+             this.department = department;
+            }
+       
+            greet() {
+                console.log(`Hello, My name is ${this.firstName} ${this.lastName} and I am ${this.age} years old. I completed ${this.qualification} ${this.department}`)
+        }
+     }
+        const Person = new person("Karthick", "M", 25, "BE", "Mechanical Engineering");
+            Person.greet();
+
+        </script>
+</body>
+</html>
